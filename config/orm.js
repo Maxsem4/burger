@@ -1,9 +1,16 @@
 const connection = require("./connection.js");
 
-selectAll();
+const orm = {
 
-insertOne();
+selectAll: async function (table) {
+    const sql = "SELECT * FROM ??";
+    const [rows] = await connection.query(sql, [table]);
 
-updateOne();
+    return rows;
+};
 
+insertOne{};
+
+updateOne{};
+}
 module.exports;
