@@ -6,7 +6,7 @@
 
 Burger ...
 
-![Image description](./assets/schema.png)
+![Image description](./assets/img/burger.png)
 
 ## 🚀 How to Use?
 
