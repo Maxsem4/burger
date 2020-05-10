@@ -6,7 +6,7 @@
 
 Burger ...
 
-![Image description](./assets/img/burger.png)
+![Image description](./public/assets/img/burger.png)
 
 ## 🚀 How to Use?
 
