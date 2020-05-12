@@ -1,0 +1,39 @@
+<div class="row">
+            <div class="col-6" id="burger-list">
+                {{#each burgers}}
+                {{#unless devoured}}
+            <div class="burger-card">
+                <img class="burger-img" src="../assets/img/burger.png">
+                <p class="burger-text">{{burger_name}}</p>
+                <div class="button-div">
+                <button class="eat-button" data-id="{{id}}" data-devoured="{{devoured}}">Eat</button>
+
+            {{/unless}}
+            {{/each}}
+
+            </div>
+         </div>
+            <div class="col-6" id="devoured-burger-list">
+                {{#each burgers}}
+                {{#if devoured}}
+            <div class="eaten-div">
+                <img class="burger-img" src="../assets/img/burger.png">
+                <p class="burger-text">{{burger_name}}</p>
+            </div>
+              {{/if}}
+            {{/each}}
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <form class="form-inline">
+                    <div class="form-group mx-sm-3">
+                        <input type="text" class="form-control burger-input" id="burger-input" placeholder="Enter burger name">
+                    </div>
+                    <button type="submit" class="btn btn-primary burger-submit" id="new-burger-button">Add burger</button>
+                </form>
+            </div>
+            <div class="col-4"></div>
+            </div>
+        </div>
