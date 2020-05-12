@@ -15,31 +15,31 @@ class Burger {
     return burgers;
   }
 
-  static insert(burger) {
-      let newBurger; 
-      await orm 
+  static async insert(burger) {
+    let newBurger;
+    await orm
       .insertOne("burgers", "burger_name", burger)
       .then(row => (newBurger = row))
       .catch(console.error);
-      return newBurger;
+    return newBurger;
   }
 
   static async update(id) {
-      let updateBurger;
-      await orm
+    let updateBurger;
+    await orm
       .updateOne("burgers", "devoured", true, "id", id)
       .then(row => (updateBurger = row))
       .catch(console.error);
-      return updateBurger;
+    return updateBurger;
   }
 
   static async find(id) {
-      let result;
-      await orm
+    let result;
+    await orm
       .findById("burgers", "id", id)
       .then(row => (result = row))
       .catch(console.error);
-      return result;
+    return result;
   }
 }
 
