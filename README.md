@@ -4,13 +4,13 @@
 
 ## Description
 
-Burger ...
+Burger app
 
 ![Image description](./public/assets/img/burger.png)
 
 ## 🚀 How to Use?
 
-...
+https://secure-sands-72848.herokuapp.com/
 
 ## 🤝 Contributing
 
